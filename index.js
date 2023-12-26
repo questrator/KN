@@ -76,7 +76,6 @@ function checkWinSeq(cell) {
         const match = e.join("").match(matchSeq);
         if (match != null) {
             const line = match[0].replaceAll(")(", "-").slice(1,-1).split("-");
-            console.log(line);
             mark(line);
         }
         return matchSeq.test(e.join(""));
@@ -84,8 +83,5 @@ function checkWinSeq(cell) {
 }
 
 function mark(line) {
-    const cells = line.map(e => document.querySelector(`.cell[data-id="${e}"]`)).forEach(e => {
-        e.classList.add("win-line");
-    });
-    console.log(cells);
+    line.map(e => document.querySelector(`.cell[data-id="${e}"]`)).forEach(e => e.classList.add("win-line"));
 }
