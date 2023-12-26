@@ -52,3 +52,7 @@
 .cell[data-player="3"] {
     background-color: #fdc8c8;
 }
+
+.win-line[data-selected="1"] {
+    background-image: url("./win.png");
+}
