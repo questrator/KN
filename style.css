@@ -54,9 +54,9 @@
 }
 
 .win-line[data-selected="1"] {
-    background-color: rgb(73, 188, 48);
+    background-color: rgb(126, 221, 104);
     background-image: url("./win.png");
     background-size: 70%;
     background-position: center center;
-    box-shadow: 0 0 0 4px rgba(73, 188, 48, 0.61);
+    box-shadow: 0 0 0 2px rgb(51, 149, 29);
 }
