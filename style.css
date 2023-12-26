@@ -24,16 +24,28 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: rgb(244, 255, 209);
     border-radius: 4px;
-    transition: background 0.3s ease;
+    background-color: rgb(244, 255, 209);    
 }
 
+.cell[data-player] {
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* mix-blend-mode: overlay; */
+    transition: background 0.3s ease;
+}
 .cell[data-player="0"] {
     background-color: #efcbff;
+    background-image: url("./star.png");
+    background-size: 80%;
+    background-position: center center;
 }
 .cell[data-player="1"] {
     background-color: #c5e9f6;
+    background-image: url("./heart.png");
+    background-size: 80%;
+    background-position: center center;
 }
 .cell[data-player="2"] {
     background-color: #b2e5b7;
